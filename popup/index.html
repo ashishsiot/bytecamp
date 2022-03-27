@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Document</title>
+    <script src="../jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="dark_mode.css" id="manage-cssstyle">
+</head>
+
+<body>
+    <div class="container-fluid">
+<br>
+        <div class="content">
+
+
+            <!-- title/description/url -->
+            <form>
+                <div>
+                    <input type="text" placeholder="URL" id="url" class="form-control" autocomplete="off">
+                    <label for="url"></label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Username" id="user" class="form-control" autocomplete="off">
+                    <label for="user"></label>
+                </div>
+                <div class="pass">
+                    <input type="text" placeholder="Password" name="password" id="passGen" value="" class="form-control">
+                </div>
+
+                <div class="save-pass">
+                    <a href="#" class="btn btn-success container-fluid mt-3 form-control1" id="save">SAVE PASSWORD</a>
+                </div>
+            </form>
+
+
+            <!-- custom input -->
+            <div class="check mt-2">
+                <div  name="eligibility" id="check">
+
+
+    
+
+
+                <!-- hidden div , visible when checked -->
+                <div class="d-none" id="custom">
+                    <form class="pass-type">
+
+                        <!-- slider -->
+
+
+
+
+
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- generate password -->
+
+            <div class="gen-pass">
+                <a href="/pgenrater/Password generator.html" target="_blank()" class="btn btn-success container-fluid mt-3 form-control1" id="generate">GENERATE PASSWORD</a>
+            </div>
+            
+
+            <!-- manage password -->
+            <div class="manage-pass pb-4">
+                <a href="#" class="btn btn-success container-fluid mt-3 form-control1" id="manage">MANAGE PASSWORD</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JQuery linked-->
+    <script src = "../jquery-3.5.1.min.js"></script>
+    <!-- javascript linked -->
+    <script src="popup.js"></script>
+    <script src="../passwordGenerator/passwordGenerator.js"></script>
+</body>
+
+</html>
